@@ -1,0 +1,39 @@
+/* 2.0 - Experience Bar | Bar Location */
+
+.experienceBar {
+    display: flex;
+    align-items: center;
+}
+
+/* 2.1 - Experience Bar | Text */
+
+.experienceBar span {
+    font-size: 1rem;
+}
+
+/* 2.2 - Experience Bar | Background Bar */
+
+.experienceBar > div {
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--grey-line);
+    margin: 0 1.5rem; /* 20px on desktop */
+    position: relative;
+}
+
+/* 2.3 - Experience Bar | Progress */
+
+.experienceBar > div > div {
+    height: 4px;
+    border-radius: 4px;
+    background: var(--green);
+}
+
+/* 2.4 - Experience Bar | Current Experience Text */
+
+span.currentExperience {
+    position: absolute;
+    top: 12px;
+    transform: translateX(-50%);
+}
